@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Services</title>
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white bg-blend-multiply font-sans">
+    <header class="sticky top-0 z-10 bg-white text-blue-900">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <span class=""><a href="index.html"> Biokarfred<span class="text-red-600 font-bold">MedLab</span>
+            <sub class="text-xs text-start inline-block align-sub font-semibold">MLSN <br /> PML 1337
+            </a></span>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+          >
+            <!-- &#9776; -->
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-blue-900 transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-blue-900 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-blue-900 after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+            <a href="aboutUs.html" class="hover:opacity-90 text-blue-900 font-semibold">About Us</a>
+            <a href="services.html" class="hover:opacity-90 text-blue-900 font-semibold">Medical Servives</a>
+            <a href="appointment.html" class="hover:opacity-90 text-blue-900 font-semibold">Appointment</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-stone-400 dark:bg-black text-5xl"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+        <nav
+          class="flex min-h-screen flex-col items-center py-8 dark:text-white text-blue-900"
+          aria-label="mobile"
+        >
+          <a href="index.html" class="w-full py-6 text-center  hover:opacity-90"
+            >Home</a
+          >
+          <a href="aboutUs.html" class="w-full py-6   text-center hover:opacity-90"
+            >About Us</a
+          >
+          <a
+            href="services.html"
+            class="w-full py-6  text-center hover:opacity-90"
+            >Medical Services</a
+          >
+          <a href="appointment.html" class="w-full py-6 text-center hover:opacity-90"
+            >Appointment</a
+          >
+          <a href="#footer" class="w-full  py-6 text-center hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="mx-auto bg-zinc-400 dark:bg-black pt-20" id="hero">
+      <section class="">
+
+        <h4>We offer the following services:</h4>
+        <p>Consultation</p>
+        <p>Diagnosis</p>
+        <p>Prescription of drugs based on test results</p>
+        
+      </section>
+      <section>
+        <h4 class="font-bold text-3xl text-center">Here Are Some Of The Tests We Carry Out</h4>
+        <div class="justify-center">
+          <h4>HAEMATOLOGY</h4>
+          <ul> 
+            <li>HCV/HB</li>
+            <li>FBC</li>
+            <li>ESR</li>
+            <li>Blood Group</li>
+            <li>Genotype</li>
+            <li>VDRL</li>
+            <li>HIV</li>
+            <li>Hepatitis B Antigen</li>
+            <li>Hepatitis C Antigen</li>
+            <li>Pltelets Counts</li>
+            <li>Bleeding/Clothung Time</li>
+            <li>Xmatching</li>
+            <li>Malaria Parasite</li>
+            <li>Microfilaria</li>
+          </ul>
+          <img src="/build/img/vermicrobiologyetel.jpg" class="mb-6  h-auto rounded-2xl object-contain  max-w-xs">
+        </div>
+        <div class="mx-auto my-12 flex list-none flex-col items-center gap-6">
+        <ul>
+          <h4 class="text-2xl font-semibold">CHEM PATH</h4> 
+        
+            <li>Blood Sugar</li>
+             <li>Liver Function Test</li>
+              <li>Electrolyte</li>
+               <li>Urea/Creatinine</li>
+                <li>Lipid Profile</li>
+                 <li>Pregnancy Test</li>
+                  <li>Cholesterol</li>
+                   <li>Triglycerides</li>
+                     <li>HDL</li>
+                      <li>LDL</li>
+                       <li>Prostate Specific Antigen(PSA)</li>
+                         <li>Uric Acid</li>
+                          <li>H.Pylori</li>
+                           <li>Calcium (Ca++)</li>
+                            <li>&alpha;-Feto protein </li>
+                             <li>Total Proteins</li>
+                              <li>Albumin</li>
+                               <li>Glucose TOlerance Test (GTT)</li>
+                                 <li>Rheumatoid Factor</li>
+        </ul>
+          <img src="/build/img/chempath1.jpg" class="mb-6  h-auto rounded-2xl object-contain  max-w-xs">
+        </div>
+        <div>
+          <h4 class="">MICRO/PARASITOLOGY</h4>
+          <ul>
+            <li>Urinanalysis</li>
+            <li>Microscopy</li>
+            <li>Stool Microscopy</li>
+            <li>Culture/Sensitivity</li>
+            <li>WIDAL Test(Typhoid Test)</li>
+          </ul>
+          <img src="/build/img/parasitplogy.jpg" class="mb-6 max-w-full h-auto object-contain max-w-xs h-auto rounded-2xl">
+        </div>
+      </section>
+    </main>
+
+
+     <footer class="bg-white w-full text-sm sm:text-2xl dark:bg-gray-900 text-blue-900 dark:text-white font-medium " id="footer">
+        <section
+          class="mx-auto flex justify-between sm:flex-col-2 p-4 sm:space-y-4 sm:justify-around"
+        >
+        <span class="hidden sm:py-10 sm:flex-row  sm:space-x-60  ">
+          <img class="" src="/build/img/footer logo.jpg" alt="">
+        </span>
+          <address>
+            <h2>Biokarfred Medical Laboratory,</h2>
+            No 1 Madaki street, Opp. Kaduna Polytechnic,<br />
+            Television, Kaduna<br />
+            Email:
+            <a href="mailto:biokarfredmedlab@gmail.com"> biokarfredmedlab@gmail.com</a
+            ><br />
+            Phone: <a href="tel: +234-813-6471-559">(+234) 813-6471-559</a>
+          </address>
+          <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+            <a href="aboutUs.html" class="hover:opacity-90">About</a>
+            <a href="services.html" class="hover:opacity-90">Services</a>
+            <a href="appointment.html" class="hover:opacity-90"> Appointment</a>
+          </nav>
+          <div class="flex flex-col sm:gap-2">
+            <p class="text-right">Copyright &copy; <span id="year2022"></span></p>
+            <p class="text-right">All Rights Reserved</p>
+          </div>
+        </section>
+      </footer>
+</body>
+</html>

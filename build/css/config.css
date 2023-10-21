@@ -1,0 +1,13 @@
+@media (max-width: 640px) {
+    .bg-custom-background {
+        background-image: linear-gradient(to bottom, rgba(77, 60, 60, 0.3) 0%,rgba(58, 40, 40, 0.7) 50%), url('/build/img/Myproject.jpg');
+    }
+  }
+  
+  @media (min-width: 641px) {
+    .bg-custom-background {
+        background-image: linear-gradient(to bottom, rgba(77, 60, 60, 0.3) 0%,rgba(58, 40, 40, 0.7) 50%), url('/build/img/My\ project.jpg');
+    }
+  }
+
+  

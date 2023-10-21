@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us Page</title>
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <link rel="stylesheet" href="/build/css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white font-sans">
+    <header class="sticky top-0 z-10 bg-white text-blue-900">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <span class=""><a href="index.html"> Biokarfred<span class="text-red-600 font-bold">MedLab</span>
+            <sub class="text-xs text-start inline-block align-sub font-semibold">MLSN <br /> PML 1337
+            </a></span>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+          >
+            <!-- &#9776; -->
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-blue-900 transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-blue-900 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-blue-900 after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+            <a href="aboutUs.html" class="hover:opacity-90 text-blue-900 font-semibold">About Us</a>
+            <a href="services.html" class="hover:opacity-90 text-blue-900 font-semibold">Medical Servives</a>
+            <a href="appointment.html" class="hover:opacity-90 text-blue-900 font-semibold">Appointment</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-stone-400 dark:bg-black text-5xl"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+        <nav
+          class="flex min-h-screen flex-col items-center py-8 dark:text-white text-blue-900"
+          aria-label="mobile"
+        >
+          <a href="index.html" class="w-full py-6 text-center  hover:opacity-90"
+            >Home</a
+          >
+          <a href="aboutUs.html" class="w-full py-6   text-center hover:opacity-90"
+            >About Us</a
+          >
+          <a
+            href="services.html"
+            class="w-full py-6  text-center hover:opacity-90"
+            >Medical Services</a
+          >
+          <a href="appointment.html" class="w-full py-6 text-center hover:opacity-90"
+            >Appointment</a
+          >
+          <a href="#footer" class="w-full  py-6 text-center hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="mx-auto bg-zinc-400 dark:bg-black pt-20" id="hero">
+        <section class=" items-center justify-center">
+            <div class="dark:text-white text-black text-xl p-6 ">
+                <h2 class="text-4xl font-semibold">ABOUT US</h2>
+                <article class="p-6">Biokarfred medical laboratory provides basic medical laboratory investigations for:
+                <br>1. Private and public hospitals.
+                <br>2. Private patients.
+                <br>3. We also participate in NGOs programmes such as Tuberculosis eradication, HIV and Malaria awareness campaign.
+                <br> And we partake in MLSC quality control programme.</article>
+              </div>
+        </section>
+
+        <article id="the-article" class="text-lg">
+
+            <div>
+                <div class="mx-auto max-w-6xl">
+                    <div class="p-2 rounded">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/3 p-4 text-sm">
+            
+                        <div class="sticky inset-x-0 top-0 left-0 py-4">
+                            
+                                <div class="text-3xl font-semibold text-blue-900 dark:text-blue-900  mb-8">Frequently asked questions.</div>
+                                <div class="mb-2">Still have questions ?</div>
+                                <div class="text-xs text-gray-600">See our FAQ for more details</div>
+            
+            
+                                </div>
+                            </div>
+                            <div class="md:w-2/3 py-12 ">
+                                <div class="p-4">
+            
+                        <div class="item px-6 py-6" x-data="{isOpen : false}">
+                            <a href="#" class="flex items-center justify-between" @click.prevent="isOpen = true">
+                                <h4 :class="{'text-blue-900 dark:text-blue-400 font-medium' : isOpen == true}">What are your opening hours ?</h4>
+                                <svg 
+                                :class="{'transform rotate-180' : isOpen == true} "
+                                class="w-5 h-5 text-gray-500"
+                                    fill="none" stroke-linecap="round" 
+                                    stroke-linejoin="round" stroke-width="2" 
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen == true}">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item px-6 py-6" x-data="{isOpen : false}">
+                            <a href="#" class="flex items-center justify-between" @click.prevent="isOpen = true">
+                                <h4 :class="{'text-blue-900 dark:text-blue-400 font-medium' : isOpen == true}">What is the purpose of Biokarfred?</h4>
+                                <svg 
+                                :class="{'transform rotate-180' : isOpen == true}"
+                                class="w-5 h-5 text-gray-500"
+                                    fill="none" stroke-linecap="round" 
+                                    stroke-linejoin="round" stroke-width="2" 
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen == true}">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+            
+                        <div class="item px-6 py-6" x-data="{isOpen : false}">
+                            <a href="#" class="flex items-center justify-between" @click.prevent="isOpen = true">
+                                <h4 :class="{'text-blue-900 dark:text-blue-400 font-medium' : isOpen == true}">Lorem Ipsum ?</h4>
+                                <svg 
+                                :class="{'transform rotate-180' : isOpen == true}"
+                                class="w-5 h-5 text-gray-500"
+                                    fill="none" stroke-linecap="round" 
+                                    stroke-linejoin="round" stroke-width="2" 
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen == true}">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+            
+                        <div class="item px-6 py-6" x-data="{isOpen : false}">
+                            <a href="#" class="flex items-center justify-between" @click.prevent="isOpen = true">
+                                <h4 :class="{'text-blue-900 dark:text-blue-400 font-medium' : isOpen == true}">Lorem Ipsum ?</h4>
+                                <svg 
+                                :class="{'transform rotate-180' : isOpen == true}"
+                                class="w-5 h-5 text-gray-500"
+                                    fill="none" stroke-linecap="round" 
+                                    stroke-linejoin="round" stroke-width="2" 
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen == true}">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+            
+                        
+            
+                        <div class="item px-6 py-6" x-data="{isOpen : false}">
+                            <a href="#" class="flex items-center justify-between" @click.prevent="isOpen = true">
+                                <h4 :class="{'text-blue-900 dark:text-blue-400 font-medium' : isOpen == true}">Lorem Ipsum ?</h4>
+                                <svg 
+                                :class="{'transform rotate-180' : isOpen == true}"
+                                class="w-5 h-5 text-gray-500"
+                                    fill="none" stroke-linecap="round" 
+                                    stroke-linejoin="round" stroke-width="2" 
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen == true}">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item px-6 py-6" x-data="{isOpen : false}">
+                            <a href="#" class="flex items-center justify-between" @click.prevent="isOpen = true">
+                                <h4 :class="{'text-blue-900 dark:text-blue-400 font-medium' : isOpen == true}">Lorem Ipsum ?</h4>
+                                <svg 
+                                :class="{'transform rotate-180' : isOpen == true}"
+                                class="w-5 h-5 text-gray-500"
+                                    fill="none" stroke-linecap="round" 
+                                    stroke-linejoin="round" stroke-width="2" 
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen == true}">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        
+                        
+                       
+                    </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </article>
+            <div
+	x-data="scrollHandler(document.getElementById('the-article'))"
+	x-cloak
+	aria-hidden="true"
+	@scroll.window="calculateHeight(window.scrollY)"
+	class="fixed h-screen w-1 hover:bg-gray-200 top-0 left-0 bg-gray-300">
+	<div :style="`max-height:${height}%`" class="h-full bg-blue-400"></div>
+</div>
+
+<div
+	id="alpine-devtools"
+	x-data="devtools()"
+	x-show="alpines.length"
+	x-init="start()">
+</div>
+    </main>
+    <footer class="bg-white w-full text-sm sm:text-2xl dark:bg-gray-900 text-blue-900 dark:text-white font-medium " id="footer">
+        <section
+          class="mx-auto flex justify-between sm:flex-col-2 p-4 sm:space-y-4 sm:justify-around"
+        >
+        <span class="hidden sm:py-10 sm:flex-row  sm:space-x-60  ">
+          <img class="" src="/build/img/footer logo.jpg" alt="">
+        </span>
+          <address>
+            <h2>Biokarfred Medical Laboratory,</h2>
+            No 1 Madaki street, Opp. Kaduna Polytechnic,<br />
+            Television, Kaduna<br />
+            Email:
+            <a href="mailto:biokarfredmedlab@gmail.com"> biokarfredmedlab@gmail.com</a
+            ><br />
+            Phone: <a href="tel: +234-813-6471-559">(+234) 813-6471-559</a>
+          </address>
+          <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+            <a href="aboutUs.html" class="hover:opacity-90">About</a>
+            <a href="services.html" class="hover:opacity-90">Services</a>
+            <a href="appointment.html" class="hover:opacity-90"> Appointment</a>
+          </nav>
+          <div class="flex flex-col sm:gap-2">
+            <p class="text-right">Copyright &copy; <span id="year2022"></span></p>
+            <p class="text-right">All Rights Reserved</p>
+          </div>
+        </section>
+      </footer>
+</body>
+</html>
