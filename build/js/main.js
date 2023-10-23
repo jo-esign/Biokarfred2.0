@@ -36,3 +36,19 @@ function scrollHandler(element = null) {
         }
     };
 }
+
+
+const dateTimeInput = document.getElementById("dateTimeInput");
+const dateTimeError = document.getElementById("dateTimeError");
+
+dateTimeInput.addEventListener("change", function () {
+    const selectedDateTime = new Date(this.value);
+    const currentDateTime = new Date();
+
+    if (selectedDateTime < currentDateTime) {
+        dateTimeError.textContent = "Please select a future date and time";
+        dateTimeInput.value = ""; // Clear the input
+    } else {
+        dateTimeError.textContent = "";
+    }
+});
