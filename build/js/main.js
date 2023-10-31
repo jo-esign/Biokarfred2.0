@@ -52,3 +52,22 @@ dateTimeInput.addEventListener("change", function () {
         dateTimeError.textContent = "";
     }
 });
+
+
+
+
+    const imageElement = document.getElementById("image-element");
+
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        // Dark mode
+        imageElement.classList.remove("theme-light");
+        imageElement.classList.add("theme-dark");
+        imageElement.src = "footer-logo1.jpg";
+    } else {
+        // Light mode
+        imageElement.classList.remove("theme-dark");
+        imageElement.classList.add("theme-light");
+        imageElement.src = "footer-logo.jpg";
+    }
+
+
