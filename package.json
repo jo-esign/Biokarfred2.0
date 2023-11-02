@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "tailwind": "npx tailwindcss -i ./src/input.css src/config.css -o ./build/css/style.css --watch",
     "prettier": "npx prettier --write **/*.html"
   },
   "keywords": [],
@@ -12,5 +12,9 @@
   "license": "ISC",
   "devDependencies": {
     "prettier-plugin-tailwindcss": "^0.5.6"
+  },
+  "dependencies": {
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0"
   }
 }
