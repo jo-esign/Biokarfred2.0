@@ -6,6 +6,7 @@
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css src/config.css -o ./build/css/style.css --watch",
     "prettier": "npx prettier --write **/*.html"
+    
   },
   "keywords": [],
   "author": "",
