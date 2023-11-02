@@ -36,7 +36,7 @@
       </section>
       <section
         id="mobile-menu"
-        class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-stone-400 dark:bg-black text-5xl"
+        class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-slate-400 dark:bg-black text-3xl md:text-5xl"
       >
         <!-- <button class="text-8xl self-end px-6">
                 &times;
@@ -70,9 +70,9 @@
             <div class="dark:text-white text-black text-xl p-6 ">
                 <h2 class="text-4xl font-semibold">ABOUT US</h2>
                 <article class="p-6">Biokarfred medical laboratory provides basic medical laboratory investigations for:
-                <br>1. Private and public hospitals.
-                <br>2. Private patients.
-                <br>3. We also participate in NGOs programmes such as Tuberculosis eradication, HIV and Malaria awareness campaign.
+                <br>‣ Private and public hospitals.
+                <br>‣ Private patients.
+                <br>‣ We also participate in NGOs programmes such as Tuberculosis eradication, HIV and Malaria awareness campaign.
                 <br> And we partake in MLSC quality control programme.</article>
               </div>
         </section>
@@ -110,7 +110,9 @@
                                 </svg>
                             </a>
                             <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen == true}">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              <p> 
+                                We are open from 8am to 6pm.
+                              </p>
                             </div>
                         </div>
                         
@@ -133,7 +135,7 @@
             
                         <div class="item px-6 py-6" x-data="{isOpen : false}">
                             <a href="#" class="flex items-center justify-between" @click.prevent="isOpen = true">
-                                <h4 :class="{'text-blue-900 dark:text-blue-400 font-medium' : isOpen == true}">Lorem Ipsum ?</h4>
+                                <h4 :class="{'text-blue-900 dark:text-blue-400 font-medium' : isOpen == true}">How many days a week are you open ?</h4>
                                 <svg 
                                 :class="{'transform rotate-180' : isOpen == true}"
                                 class="w-5 h-5 text-gray-500"
@@ -144,7 +146,7 @@
                                 </svg>
                             </a>
                             <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen == true}">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>We are from from Monday to Saturday.</p>
                             </div>
                         </div>
             
