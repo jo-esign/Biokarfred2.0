@@ -23,68 +23,68 @@
     </style>
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50  text-white font-sans bg-cover bg-custom-background" >
-    <header class="sticky top-0 z-20 bg-slate-50 dark:bg-gray-900 text-blue-900 dark:text-white">
-      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
-        <h1 class="text-3xl font-medium">
-          <span class=""><a href="#hero"> Biokarfred<span class="text-red-600 font-bold">MedLab</span>
-            <sub class="text-xs text-start inline-block align-sub font-semibold">MLSN <br /> PML 1337
-            </a></span>
-        </h1>
-        <div>
-          <button
-            id="hamburger-button"
-            class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
-          >
-            <!-- &#9776; -->
-            <div
-              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-blue-900 transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-blue-900 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-blue-900 after:transition-all after:duration-500 after:content-['']"
-            ></div>
-          </button>
-          <nav class="hidden space-x-8 text-xl md:block text-blue-900 dark:text-white" aria-label="main">
-            <a href="aboutUs.html" class="hover:opacity-90  font-semibold">About Us</a>
-            <a href="services.html" class="hover:opacity-90  font-semibold">Medical Servives</a>
-            <a href="appointment.html" class="hover:opacity-90 font-semibold">Appointment</a>
-          </nav>
-        </div>
-      </section>
-      <section
-      id="mobile-menu"
-      class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-slate-400 dark:bg-black text-3xl md:text-5xl"
-    >
-      <!-- <button class="text-8xl self-end px-6">
-              &times;
-          </button> -->
-      <nav
-        class="flex min-h-screen flex-col items-center py-8 dark:text-white text-blue-900"
-        aria-label="mobile"
-      >
-        <a href="index.html" class="w-full py-6 text-center  hover:opacity-90"
-          >Home</a
+  <header class="sticky top-0 z-20 bg-white dark:bg-gray-900 dark:text-white text-blue-900">
+    <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+      <h1 class="sm:text-3xl text-2xl font-medium">
+        <span class=""><a href="index.html"> Biokarfred<span class="text-red-600 font-bold">MedLab</span>
+          <sub class="sm:text-sm text-xs text-start inline-block align-sub font-medium sm:font-semibold">MLSN <br /> PML 1337
+          </a></span>
+      </h1>
+      <div>
+        <button
+          id="hamburger-button"
+          class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
         >
-        <a href="aboutUs.html" class="w-full py-6   text-center hover:opacity-90"
-          >About Us</a
-        >
-        <a
-          href="services.html"
-          class="w-full py-6  text-center hover:opacity-90"
-          >Medical Services</a
-        >
-        <a href="appointment.html" class="w-full py-6 text-center hover:opacity-90"
-          >Appointment</a
-        >
-        <a href="#footer" class="w-full  py-6 text-center hover:opacity-90"
-          >Legal</a
-        >
-      </nav>
+          <!-- &#9776; -->
+          <div
+            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-blue-900 transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-blue-900 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-blue-900 after:transition-all after:duration-500 after:content-['']"
+          ></div>
+        </button>
+        <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+          <a href="aboutUs.html" class="hover:opacity-90 text-blue-900 dark:text-white font-semibold">About Us</a>
+          <a href="services.html" class="hover:opacity-90 text-blue-900 dark:text-white font-semibold">Medical Servives</a>
+          <a href="appointment.html" class="hover:opacity-90 text-blue-900 dark:text-white font-semibold">Appointment</a>
+        </nav>
+      </div>
     </section>
-    </header>
-    <main class=" mx-auto p-5 sm:p-20 flex-grow " id="hero">
+    <section
+    id="mobile-menu"
+    class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-slate-400 dark:bg-black text-3xl md:text-5xl"
+  >
+    <!-- <button class="text-8xl self-end px-6">
+            &times;
+        </button> -->
+    <nav
+      class="flex min-h-screen flex-col items-center py-8 dark:text-white text-blue-900"
+      aria-label="mobile"
+    >
+      <a href="index.html" class="w-full py-6 text-center  hover:opacity-90"
+        >Home</a
+      >
+      <a href="aboutUs.html" class="w-full py-6   text-center hover:opacity-90"
+        >About Us</a
+      >
+      <a
+        href="services.html"
+        class="w-full py-6  text-center hover:opacity-90"
+        >Medical Services</a
+      >
+      <a href="appointment.html" class="w-full py-6 text-center hover:opacity-90"
+        >Appointment</a
+      >
+      <a href="#footer" class="w-full  py-6 text-center hover:opacity-90"
+        >Legal</a
+      >
+    </nav>
+  </section>
+  </header>
+    <main class=" p-5 sm:p-20 flex-grow " id="hero">
         <section class=" widescreen:section-min-height tallscreen:section-min-height">
-            <div class="relative backdrop-blur-xs bg-white/10 rounded-2xl dark:bg-blend-darken z-10  max-w-xs md:max-w-2xl items-center content-center justify-center mx-auto  p-6">
+            <div class="relative backdrop-blur-xs bg-white/10 rounded-2xl dark:bg-blend-darken z-10  max-w-xs md:max-w-2xl items-center content-center justify-center mx-auto  p-5">
                 <div class=" text-center p-5">
-                    <p class="text-2xl md:text-5xl  font-semibold">Welcome to Biokarfred. </br>
+                    <p class="text-xl md:text-5xl md:p-8 xl:p-2 font-medium  sm:font-semibold">Welcome to Biokarfred. </br>
                        Your well-being is our priority. We empower you with knowlege and easy online appointments for personalized care.</p>
-                    <p class="font-medium md:text-lg">Explore comprehensive resources and join a supportive health-conscious community. Start your journey to a better health today.</p>
+                    <p class="font-normal text-lg md:p-8 xl:p-2 md:text-xl">Explore comprehensive resources and join a supportive health-conscious community. Start your journey to a better health today.</p>
                 </div>
                 <div class="relative p-6  md:ms-20 flex text-lg space-x-20 md:space-x-60">
                     <button class="transform bg-indigo-600 text-sm md:text-xl rounded-xl p-2 transition duration-500 hover:scale-110 hover:bg-white hover:text-indigo-600  font-semibold "><a href="appointment.html">
