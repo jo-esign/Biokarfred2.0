@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
 </head>
-<body class="min-h-screen bg-slate-5 dark:text-white font-sans">
+<body class="min-h-screen bg-white dark:text-white font-sans">
   <header class="sticky top-0 z-10 bg-white dark:bg-gray-900 dark:text-white text-blue-900">
     <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
       <h1 class="sm:text-3xl text-2xl font-medium">
@@ -37,7 +37,7 @@
     </section>
     <section
     id="mobile-menu"
-    class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-slate-400 dark:bg-black text-3xl md:text-5xl"
+    class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-slate-300 dark:bg-black text-3xl md:text-5xl"
   >
     <!-- <button class="text-8xl self-end px-6">
             &times;
@@ -66,7 +66,7 @@
     </nav>
   </section>
   </header>
-    <main class="mx-auto bg-zinc-400 dark:bg-gray-950 pt-20" id="hero">
+    <main class="mx-auto bg-zinc-300 dark:bg-gray-950 pt-20" id="hero">
         <section class=" items-center justify-center">
             <div class="dark:text-white text-black text-xl p-6 ">
                 <h2 class="text-4xl font-semibold">ABOUT US</h2>
@@ -75,7 +75,19 @@
                 <br>‣ Private patients.
                 <br>‣ We also participate in NGOs programmes such as Tuberculosis eradication, HIV and Malaria awareness campaign.
                 <br> And we partake in MLSC quality control programme.</article>
+
+                <address class="p-6">
+                  
+                  We're located at: No 1 Madaki street, Opp. Kaduna Polytechnic,<br />
+                  Television, Kaduna<br />
+                  Email:
+                  <a href="mailto:biokarfredmedlab@gmail.com"> biokarfredmedlab@gmail.com</a
+                  ><br />
+                  Phone: <a href="tel: +234-813-6471-559">(+234) 813-6471-559</a>
+                </address>
               </div>
+
+
         </section>
 
         <article id="the-article" class="text-lg">
@@ -233,29 +245,21 @@
     </main>
     <footer class="bg-white w-full text-sm sm:text-2xl dark:bg-gray-900 text-blue-900 dark:text-white font-medium " id="footer">
       <section
-      class="mx-auto flex  sm:flex-col-3 px-8 pt-5 sm:space-y-4 justify-around"
-    >
+        class="mx-auto flex  sm:flex-col-3 px-8 pt-5 sm:space-y-2 justify-evenly"
+      >
+      
+      <h2>Biokarfred Medical Laboratory</h2>
         
-          <address>
-            <h2>Biokarfred Medical Laboratory,</h2>
-            No 1 Madaki street, Opp. Kaduna Polytechnic,<br />
-            Television, Kaduna<br />
-            Email:
-            <a href="mailto:biokarfredmedlab@gmail.com"> biokarfredmedlab@gmail.com</a
-            ><br />
-            Phone: <a href="tel: +234-813-6471-559">(+234) 813-6471-559</a>
-          </address>
-          
-          <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
-            <a href="aboutUs.html" class="hover:opacity-90">About</a>
-            <a href="services.html" class="hover:opacity-90">Services</a>
-            <a href="appointment.html" class="hover:opacity-90"> Appointment</a>
-          </nav>
-          <div class="flex flex-col sm:gap-2">
-            <p class="text-right">Copyright &copy; <span id="year2023"></span></p>
-            <p class="text-right">All Rights Reserved</p>
-          </div>
-        </section>
-      </footer>
+        <nav class="hidden flex-col  md:flex" aria-label="footer">
+          <a href="aboutUs.html" class="hover:opacity-90">About</a>
+          <a href="services.html" class="hover:opacity-90">Services</a>
+          <a href="appointment.html" class="hover:opacity-90"> Appointment</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <script>document.write(new Date().getFullYear())</script> </p>
+          <p class="text-right">jodsgn: All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
 </body>
 </html>
