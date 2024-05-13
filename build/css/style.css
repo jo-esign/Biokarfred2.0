@@ -1210,6 +1210,18 @@ video {
   --tw-ring-color: rgb(115 115 115 / .40);
 }
 
+.ring-neutral-400\/\[\.40\] {
+  --tw-ring-color: rgb(163 163 163 / .40);
+}
+
+.ring-neutral-300\/\[\.40\] {
+  --tw-ring-color: rgb(212 212 212 / .40);
+}
+
+.ring-neutral-300\/\[\.30\] {
+  --tw-ring-color: rgb(212 212 212 / .30);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
