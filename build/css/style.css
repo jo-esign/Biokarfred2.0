@@ -1151,6 +1151,10 @@ video {
   padding-top: 1.25rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1651,6 +1655,10 @@ video {
 
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:pt-4 {
+    padding-top: 1rem;
   }
 
   .md\:text-3xl {
