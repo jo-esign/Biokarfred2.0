@@ -1575,6 +1575,10 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .md\:float-left {
+    float: left;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
