@@ -1540,6 +1540,10 @@ video {
     float: left;
   }
 
+  .md\:m-10 {
+    margin: 2.5rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
