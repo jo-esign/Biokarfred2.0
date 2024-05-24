@@ -616,8 +616,20 @@ video {
   grid-row: span 2 / span 2;
 }
 
+.float-start {
+  float: inline-start;
+}
+
+.float-right {
+  float: right;
+}
+
 .float-left {
   float: left;
+}
+
+.float-none {
+  float: none;
 }
 
 .m-10 {
@@ -869,6 +881,10 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .rounded {
