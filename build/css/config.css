@@ -12,4 +12,16 @@
     
   }
 
- 
+ .hero2{
+  width: 50vw;
+  height: fit-content;
+  margin-top:auto;
+    margin-bottom: auto;
+ }
+ @media (max-width: 640px) {
+  .hero2{
+    display: flex;
+    margin-top:auto;
+    margin-bottom: auto;
+    width: 90vw;  }
+  }
